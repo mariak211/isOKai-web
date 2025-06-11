@@ -1,0 +1,70 @@
+// components/EmailCapture.tsx
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+
+const EmailCapture = () => {
+  const [email, setEmail] = useState('');
+  const [isValid, setIsValid] = useState(true);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const validateEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+  const handleSubmit = () => {
+    const valid = validateEmail(email);
+    setIsValid(valid);
+
+    if (valid) {
+      setIsSubmitted(true);
+      console.log('Email submitted:', email);
+    }
+  };
+
+  if (isSubmitted) {
+    return (
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="flex items-center justify-center space-x-2 text-green-400 pt-2"
+      >
+        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+        </svg>
+        <span className="font-medium">Thanks! We'll be in touch.</span>
+      </motion.div>
+    );
+  }
+
+  return (
+    <div className="w-full max-w-md ">
+      <label htmlFor="email" className="sr-only">Email address</label>
+      <div className="flex flex-col sm:flex-row gap-3">
+        <input
+          id="email"
+          type="email"
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+            setIsValid(true);
+          }}
+          placeholder="Enter your email"
+          className={`flex-1 px-4 py-3 bg-slate-800/50 border rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 backdrop-blur-sm transition-all duration-200 ${
+            isValid
+              ? 'border-slate-600 focus:border-blue-400 focus:ring-blue-400/20'
+              : 'border-red-400 focus:border-red-400 focus:ring-red-400/20'
+          }`}
+        />
+        <motion.button
+          onClick={handleSubmit}
+          className="px-6 py-3 bg-gradient-to-r from-blue-500 to-green-500 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-green-600 focus:outline-none focus:ring-2 focus:ring-blue-400/50 transition-all duration-200 whitespace-nowrap"
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+        >
+          Get early access
+        </motion.button>
+      </div>
+      {!isValid && <p className="mt-1 text-sm text-red-400">Please enter a valid email address</p>}
+    </div>
+  );
+};
+
+export default EmailCapture;
