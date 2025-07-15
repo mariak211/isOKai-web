@@ -53,7 +53,7 @@ const WhatIsIsOKai = () => {
             </p>
 
             <p className="text-lg text-slate-700 leading-relaxed">
-              Now, I'm turning it into a real app for anyone who needs to breathe, realign, and move forward.
+              isOKai isn’t about doing more. It’s about finding direction again, one quiet check-in at a time.
             </p>
 
             <div className="p-4 bg-gray-500/20 backdrop-blur-sm rounded-xl border border-white/30">

@@ -124,9 +124,6 @@ const WhoThisIsFor = () => {
             the ache of not fitting in, and the quiet strength it takes to keep going.
           </p>
           <div className="mt-6 flex justify-center">
-            {/* <button className="px-8 py-3 bg-gradient-to-r from-[#39ca9c] to-[#10B981] text-white font-semibold rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-              Start Your Clarity Journey
-            </button> */}
             <div className="flex flex-wrap gap-3 pt-4 justify-center lg:justify-start">
             <a
               href="https://testflight.apple.com/join/51RX2Nj9"
