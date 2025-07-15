@@ -17,7 +17,7 @@ const MockupImage = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex(prev => (prev + 1) % MOCKUP_IMAGES.length);
-    }, 7000); // every 7 seconds
+    }, 7000); 
 
     return () => clearInterval(interval);
   }, []);

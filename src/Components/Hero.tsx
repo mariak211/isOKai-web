@@ -57,9 +57,9 @@ const HeroHeading = () => (
       <span className="mx-2 text-green-500">•</span>
       Evening Debrief
       <span className="mx-2 text-blue-300">•</span>
-      Build Clarity
-      <span className="mx-2 text-purple-400">•</span>
       Gamify
+      <span className="mx-2 text-purple-400">•</span>
+      Build Clarity
     </motion.p>
   </>
 );

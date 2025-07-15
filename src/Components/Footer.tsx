@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
         <span>Backed by me</span>
       </div>
       <div className="hidden sm:block w-px h-4 bg-slate-600"></div>
-      <span>Built by founders, for founders.</span>
+      <span>Built by dreamer, for dreamers.</span>
     </motion.div>
   );
 };

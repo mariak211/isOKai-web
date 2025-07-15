@@ -53,7 +53,7 @@ const WhatIsIsOKai = () => {
           </div>
 
           {/* Call to action buttons */}
-          <div className="flex flex-wrap gap-3 pt-4">
+          <div className="flex justify-center flex-wrap gap-3 pt-4">
             <button className="px-6 py-3 bg-gradient-to-r from-[#059669] to-[#10B981] text-white font-semibold rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               Try isOKai
             </button>

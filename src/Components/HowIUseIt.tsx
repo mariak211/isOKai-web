@@ -48,9 +48,9 @@ const HowIUseIt = () => {
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold text-slate-800 leading-tight">
-            How I Use it{" "}
+            How I Use it, {" "}
             <span className="bg-gradient-to-r from-[#059669]/50 to-[#10B981] bg-clip-text text-transparent">
-              And Maybe You Will Too
+              and Maybe You Will Too
             </span>
           </h2>
         </div>
@@ -94,7 +94,7 @@ const HowIUseIt = () => {
         </div>
 
         {/* Bottom decorative text */}
-        <div className="text-center bg-gray-400/20 mt-16">
+        <div className="text-center mt-16">
           <p className="text-slate-500 italic text-lg max-w-2xl mx-auto">
             Simple rituals that help you find your center, one check-in at a time.
           </p>
