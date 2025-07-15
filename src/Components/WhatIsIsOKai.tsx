@@ -25,20 +25,31 @@ const WhatIsIsOKai = () => {
 
           <div className="space-y-5">
             <p className="text-lg text-slate-700 leading-relaxed">
-              isOKai is a personal ritual I created after hitting wall after wall in my job search after I graduated.
+              isOKai is a personal ritual I created after hitting wall after wall in my job search despite graduating from one of the top engineering schools in Canada, the
+              <span className="px-2 py-1 bg-gradient-to-r from-[#c0f3a7] to-[#c16ee7] text-emerald-800 rounded-md font-semibold">
+                University of Waterloo
+              </span>{" "}
             </p>
 
             <p className="text-lg text-slate-700 leading-relaxed">
-              It began as a quiet space to{" "}
+              It started as a quiet whisper to myself: {" "}
+              <span className="px-2 py-1 bg-gradient-to-r from-[#c0f3a7] to-[#6eb7e7] text-emerald-800 rounded-md font-semibold">
+                it is Okay.
+              </span>{" "}
+              A way to{" "}
               <span className="px-2 py-1 bg-gradient-to-r from-[#A7F3D0] to-[#6EE7B7] text-emerald-800 rounded-md font-semibold">
-                reset my focus
+                reset
               </span>{" "}
               in the morning,{" "}
               <span className="px-2 py-1 bg-gradient-to-r from-[#FBBF24] to-[#a9a7a3] text-orange-800 rounded-md font-semibold">
-                reflect at night
-              </span>
-              , and track{" "}
-              <span className="italic font-medium text-slate-800">clarity, not productivity</span>.
+                reflect
+              </span> {" "}
+              in the evening, and track{" "}
+
+              <span className="px-2 py-1 bg-gradient-to-r  from-blue-500 to-green-500 text-white rounded-md font-semibold">
+                clarity
+              </span> {" "}
+              <span className="italic font-medium text-slate-800">, not productivity</span>.
             </p>
 
             <p className="text-lg text-slate-700 leading-relaxed">
@@ -47,19 +58,21 @@ const WhatIsIsOKai = () => {
 
             <div className="p-4 bg-gray-500/20 backdrop-blur-sm rounded-xl border border-white/30">
               <p className="text-lg text-slate-600 italic font-medium">
-                It's not perfect. But it's honest. And it's helping me breathe again.
+                It's not perfect. But it's honest. And it's helping me breathe again with clarity.
               </p>
             </div>
           </div>
 
           {/* Call to action buttons */}
-          <div className="flex justify-center flex-wrap gap-3 pt-4">
-            <button className="px-6 py-3 bg-gradient-to-r from-[#059669] to-[#10B981] text-white font-semibold rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-              Try isOKai
-            </button>
-            <button className="px-6 py-3 bg-white/60 backdrop-blur-sm text-slate-700 font-semibold rounded-full border border-white/30 hover:bg-white/80 transition-all duration-300">
-              Learn More
-            </button>
+          <div className="flex flex-wrap gap-3 pt-4 justify-center lg:justify-start">
+            <a
+              href="https://testflight.apple.com/join/51RX2Nj9"
+              target="_blank"
+              rel="noopener noreferrer">
+              <button className="px-6 py-3 bg-gradient-to-r from-[#059669] to-[#10B981] text-white font-semibold rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                Try isOKai
+              </button>
+            </a>
           </div>
         </div>
 

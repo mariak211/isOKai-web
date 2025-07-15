@@ -7,7 +7,7 @@ const HowIUseIt = () => {
     {
       icon: "🕯️",
       title: "Morning Focus",
-      subtitle: "One sentence: What matters most today?",
+      subtitle: "1-sentence liner. What matters to me the most today?",
       gradient: "from-[#FEF3C7] to-[#FDE68A]",
       iconBg: "from-[#FBBF24] to-[#F59E0B]",
       textColor: "text-amber-800"
@@ -15,19 +15,19 @@ const HowIUseIt = () => {
     {
       icon: "🌑",
       title: "Evening Debrief",
-      subtitle: "A moment to ask: What got in the way? What gave me peace?",
+      subtitle: "A moment to reflect, what went well, what got in the way and what gave me clarity today?",
       gradient: "from-[#E0E7FF] to-[#C7D2FE]",
       iconBg: "from-[#6366F1] to-[#4F46E5]",
       textColor: "text-indigo-700"
     },
     {
-      icon: "📈",
-      title: "Clarity Score",
-      subtitle: "A quiet nudge toward direction, not performance.",
-      gradient: "from-[#A7F3D0] to-[#6EE7B7]",
-      iconBg: "from-[#059669] to-[#10B981]",
-      textColor: "text-emerald-800"
-    }
+  icon: "📈",
+  title: "Clarity Score",
+  subtitle: "Your mind’s dashboard, guiding direction, not performance.",
+  gradient: "from-[#A7F3D0] to-[#6EE7B7]",
+  iconBg: "from-[#059669] to-[#10B981]",
+  textColor: "text-emerald-800"
+}
   ];
 
   return (
