@@ -10,16 +10,16 @@ const WhoThisIsFor = () => {
       description: "When the world feels still, but your mind won't stop creating",
       gradient: "from-[#FEF3C7] to-[#FDE68A]",
       iconBg: "from-[#FBBF24] to-[#F59E0B]",
-      textColor: "text-amber-800",
+      textColor: "text-amber-300",
       decorIcon: "⚡"
     },
     {
       icon: "✨",
-      title: "Dreamers after rejection",
+      title: "Dreamers navigating rejection",
       description: "When 'no' feels like the end, but you know it's just a detour",
       gradient: "from-[#FCE7F3] to-[#FBCFE8]",
       iconBg: "from-[#EC4899] to-[#DB2777]",
-      textColor: "text-pink-800",
+      textColor: "text-pink-300",
       decorIcon: "💫"
     },
     {
@@ -28,7 +28,7 @@ const WhoThisIsFor = () => {
       description: "Your worth isn't measured by application responses",
       gradient: "from-[#E0E7FF] to-[#C7D2FE]",
       iconBg: "from-[#6366F1] to-[#4F46E5]",
-      textColor: "text-indigo-800",
+      textColor: "text-indigo-300",
       decorIcon: "🔍"
     },
     {
@@ -37,25 +37,25 @@ const WhoThisIsFor = () => {
       description: "Navigating spaces that weren't built for you takes courage",
       gradient: "from-[#A7F3D0] to-[#6EE7B7]",
       iconBg: "from-[#059669] to-[#10B981]",
-      textColor: "text-emerald-800",
+      textColor: "text-emerald-400",
       decorIcon: "🚀"
     },
     {
-      icon: "💙",
-      title: "Anyone who's trying and tired",
-      description: "Being human in a world that demands perfection is exhausting",
-      gradient: "from-[#DBEAFE] to-[#BFDBFE]",
-      iconBg: "from-[#2563EB] to-[#1D4ED8]",
-      textColor: "text-blue-800",
-      decorIcon: "🤗"
-      },
+  icon: "💙",
+  title: "Anyone doing their best, even on hard days",
+  description: "In a world that often expects perfection, simply showing up is an act of courage.",
+  gradient: "from-[#DBEAFE] to-[#BFDBFE]",
+  iconBg: "from-[#2563EB] to-[#1D4ED8]",
+  textColor: "text-blue-300",
+  decorIcon: "🤗"
+},
     {
       icon: "🦸",
       title: "Heroes and heroines in their basements",
-      description: "Creating magic in quiet spaces, waiting for the world to discover your genius",
+      description: "Creating magic in quiet spaces, waiting for the world to discover their geniuses",
       gradient: "from-[#F3E8FF] to-[#E9D5FF]",
       iconBg: "from-[#8B5CF6] to-[#7C3AED]",
-      textColor: "text-purple-800",
+      textColor: "text-purple-300",
       decorIcon: "🌟"
     },
   ];
