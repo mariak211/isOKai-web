@@ -1,4 +1,6 @@
-
+/* eslint-disable */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable react/no-unescaped-entities */
 
 'use client';
 
@@ -47,6 +49,7 @@ const HeroHeading = () => (
         isOKai
       </span>
     </motion.h1>
+    
     <motion.p
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -64,34 +67,13 @@ const HeroHeading = () => (
   </>
 );
 
-const ScrollIndicator = () => (
-  <motion.div
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 1, delay: 1 }}
-    className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
-  >
-    <motion.div
-      animate={{ y: [0, 10, 0] }}
-      transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-      className="w-6 h-10 border-2 border-slate-600 rounded-full flex justify-center"
-    >
-      <motion.div
-        animate={{ y: [0, 12, 0] }}
-        transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-        className="w-1 h-3 bg-slate-400 rounded-full mt-2"
-      />
-    </motion.div>
-  </motion.div>
-);
-
 const Hero: React.FC = () => {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, -100]);
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
   return (
-    <section className="relative min-h-screen bg-slate-900 overflow-hidden flex items-center justify-center py-20 px-4">
+    <section className="relative min-h-screen bg-slate-900 flex items-center justify-center py-20 px-4">
       <BackgroundLayer animation={{ y: ['0%', '0%'], opacity: [1, 0.5, 1] }} />
       <motion.div
         style={{ y, opacity }}

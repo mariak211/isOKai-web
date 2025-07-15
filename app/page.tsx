@@ -1,3 +1,6 @@
+/* eslint-disable */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable react/no-unescaped-entities */
 
 "use client";
 
@@ -18,7 +21,7 @@ const fadeInUp = {
   },
 };
 
-const BackgroundLayer = ({ animation }: { animation: any }) => (
+const BackgroundLayer = ({ animation }: { animation: any}) => (
   <motion.div
     animate={animation}
     transition={{

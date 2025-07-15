@@ -54,7 +54,8 @@ const EmailCapture = () => {
             clipRule="evenodd"
           />
         </svg>
-        <span className="font-medium">Thanks! We'll be in touch.</span>
+        <span className="font-medium">Thanks! We&apos;ll be in touch.</span>
+
       </div>
 
       <a

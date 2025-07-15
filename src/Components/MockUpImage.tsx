@@ -23,7 +23,7 @@ const MockupImage = () => {
   }, []);
 
   return (
-    <div className="relative w-[300px] h-[500px] mx-auto mt-10 overflow-hidden">
+    <div className="relative w-[180px] h-[320px] sm:w-[240px] sm:h-[400px] lg:w-[300px] lg:h-[500px] mx-auto mt-10 overflow-hidden">
       <AnimatePresence mode="wait">
         <motion.div
           key={index}
