@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "isOKai",
-  description: "Clarity is your co-founder",
+  description: "Set Intention, Debrief, Gamifiy and build Clarity",
 };
 
 export default function RootLayout({

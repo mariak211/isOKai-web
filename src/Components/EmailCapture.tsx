@@ -1,6 +1,9 @@
-// components/EmailCapture.tsx
+
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { doc, setDoc, serverTimestamp, getDoc } from 'firebase/firestore';
+
+import { db } from '@/app/lib/Firebase';
 
 const EmailCapture = () => {
   const [email, setEmail] = useState('');
@@ -8,16 +11,34 @@ const EmailCapture = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const validateEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  const handleSubmit = async () => {
+  const valid = validateEmail(email);
+  setIsValid(valid);
 
-  const handleSubmit = () => {
-    const valid = validateEmail(email);
-    setIsValid(valid);
+  if (!valid) return;
 
-    if (valid) {
+  const emailKey = email.trim().toLowerCase();
+  const docRef = doc(db, 'earlyAccessEmails', emailKey);
+
+  try {
+    const existing = await getDoc(docRef);
+    if (existing.exists()) {
       setIsSubmitted(true);
-      console.log('Email submitted:', email);
+      console.log('Already signed up');
+      return;
     }
-  };
+
+    await setDoc(docRef, {
+      email: emailKey,
+      createdAt: serverTimestamp()
+    });
+
+    setIsSubmitted(true);
+    console.log('Email submitted:', email);
+  } catch (error) {
+    console.error('Error submitting email:', error);
+  }
+};
 
   if (isSubmitted) {
     return (
@@ -59,7 +80,7 @@ const EmailCapture = () => {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
-          Get early access
+          Join Waitlist
         </motion.button>
       </div>
       {!isValid && <p className="mt-1 text-sm text-red-400">Please enter a valid email address</p>}
