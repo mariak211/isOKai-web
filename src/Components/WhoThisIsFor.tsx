@@ -4,61 +4,37 @@ import React from "react";
 
 const WhoThisIsFor = () => {
   const personas = [
-    {
-      icon: "🏗️",
-      title: "Builders in quiet seasons",
-      description: "When the world feels still, but your mind won't stop creating",
-      gradient: "from-[#FEF3C7] to-[#FDE68A]",
-      iconBg: "from-[#FBBF24] to-[#F59E0B]",
-      textColor: "text-amber-300",
-      decorIcon: "⚡"
-    },
-    {
-      icon: "✨",
-      title: "Dreamers navigating rejection",
-      description: "When 'no' feels like the end, but you know it's just a detour",
-      gradient: "from-[#FCE7F3] to-[#FBCFE8]",
-      iconBg: "from-[#EC4899] to-[#DB2777]",
-      textColor: "text-pink-300",
-      decorIcon: "💫"
-    },
-    {
-      icon: "👁️",
-      title: "Jobseekers who don't feel seen",
-      description: "Your worth isn't measured by application responses",
-      gradient: "from-[#E0E7FF] to-[#C7D2FE]",
-      iconBg: "from-[#6366F1] to-[#4F46E5]",
-      textColor: "text-indigo-300",
-      decorIcon: "🔍"
-    },
-    {
-      icon: "🌍",
-      title: "First-gens, immigrants, outsiders",
-      description: "Navigating spaces that weren't built for you takes courage",
-      gradient: "from-[#A7F3D0] to-[#6EE7B7]",
-      iconBg: "from-[#059669] to-[#10B981]",
-      textColor: "text-emerald-400",
-      decorIcon: "🚀"
-    },
-    {
-  icon: "💙",
-  title: "Anyone doing their best, even on hard days",
-  description: "In a world that often expects perfection, simply showing up is an act of courage.",
-  gradient: "from-[#DBEAFE] to-[#BFDBFE]",
-  iconBg: "from-[#2563EB] to-[#1D4ED8]",
-  textColor: "text-blue-300",
-  decorIcon: "🤗"
-},
-    {
-      icon: "🦸",
-      title: "Heroes and heroines in their basements",
-      description: "Creating magic in quiet spaces, waiting for the world to discover their geniuses",
-      gradient: "from-[#F3E8FF] to-[#E9D5FF]",
-      iconBg: "from-[#8B5CF6] to-[#7C3AED]",
-      textColor: "text-purple-300",
-      decorIcon: "🌟"
-    },
-  ];
+  {
+    icon: "🌱",
+    title: "Dreamers & doers in transition",
+    description:
+      "Whether you're building, rebuilding, or just beginning your next chapter starts with clarity.",
+    gradient: "from-[#DBEAFE] to-[#BFDBFE]",
+    iconBg: "from-[#2563EB] to-[#1D4ED8]",
+    textColor: "text-blue-300",
+    decorIcon: "✨"
+  },
+  {
+    icon: "🧭",
+    title: "Founders, freelancers, self-starters",
+    description:
+      "When you're carving your own path, you need tools that help you stay grounded and focused.",
+    gradient: "from-[#FEF3C7] to-[#FDE68A]",
+    iconBg: "from-[#F59E0B] to-[#D97706]",
+    textColor: "text-amber-400",
+    decorIcon: "🚀"
+  },
+  {
+    icon: "🧠",
+    title: "Anyone craving calm in a chaotic world",
+    description:
+      "You don’t need to hustle harder you need space to think clearly, feel deeply, and move intentionally.",
+    gradient: "from-[#F3E8FF] to-[#E9D5FF]",
+    iconBg: "from-[#A855F7] to-[#9333EA]",
+    textColor: "text-purple-300",
+    decorIcon: "🕊️"
+  }
+];
 
   return (
     <section className="bg-gradient-to-br from-[#F0F9FF] via-[#E0F2FE] to-[#F0FDF4] py-20 px-4 sm:px-8 md:px-16 relative overflow-hidden">
@@ -148,8 +124,8 @@ const WhoThisIsFor = () => {
             the ache of not fitting in, and the quiet strength it takes to keep going.
           </p>
           <div className="mt-6 flex justify-center">
-            <button className="px-8 py-3 bg-gradient-to-r from-[#059669] to-[#10B981] text-white font-semibold rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-              Find Your Peace
+            <button className="px-8 py-3 bg-gradient-to-r from-[#39ca9c] to-[#10B981] text-white font-semibold rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              Start Your Clarity Journey
             </button>
           </div>
         </div>
