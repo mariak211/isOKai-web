@@ -27,41 +27,17 @@ const WhatIsIsOKai = () => {
           </h2>
 
           <div className="space-y-5">
-            <p className="text-lg text-slate-700 leading-relaxed">
-              isOKai is a personal ritual I created after hitting wall after wall in my job search despite graduating from one of the top engineering schools in Canada, the
-              <span className="px-2 py-1 bg-gradient-to-r from-[#c0f3a7] to-[#c16ee7] text-emerald-800 rounded-md font-semibold">
-                University of Waterloo
+            <p className="text-lg text-slate-700">
+              isOKai isn’t about doing more. It’s about finding your direction again, one quiet check-in at a time.
+              Whether you’re a full-time employee with big ideas, a student aiming for your first job in tech, or a solo founder dreaming of building the next big thing, what you need first isn’t full to-do lists.
+
+              <span className="px-2 py-1  text-emerald-400 rounded-md italic font-semibold">
+                You need clarity.
               </span>{" "}
             </p>
-
-            <p className="text-lg text-slate-700 leading-relaxed">
-              It started as a quiet whisper to myself: {" "}
-              <span className="px-2 py-1 bg-gradient-to-r from-[#c0f3a7] to-[#6eb7e7] text-emerald-800 rounded-md font-semibold">
-                it is Okay.
-              </span>{" "}
-              A way to{" "}
-              <span className="px-2 py-1 bg-gradient-to-r from-[#A7F3D0] to-[#6EE7B7] text-emerald-800 rounded-md font-semibold">
-                reset
-              </span>{" "}
-              in the morning,{" "}
-              <span className="px-2 py-1 bg-gradient-to-r from-[#FBBF24] to-[#a9a7a3] text-orange-800 rounded-md font-semibold">
-                reflect
-              </span> {" "}
-              in the evening, and track{" "}
-
-              <span className="px-2 py-1 bg-gradient-to-r  from-blue-500 to-green-500 text-white rounded-md font-semibold">
-                clarity
-              </span> {" "}
-              <span className="italic font-medium text-slate-800">, not productivity</span>.
-            </p>
-
-            <p className="text-lg text-slate-700 leading-relaxed">
-              isOKai isn’t about doing more. It’s about finding direction again, one quiet check-in at a time.
-            </p>
-
             <div className="p-4 bg-gray-500/20 backdrop-blur-sm rounded-xl border border-white/30">
               <p className="text-lg text-slate-600 italic font-medium">
-                It's not perfect. But it's honest. And it's helping me breathe again with clarity.
+               isOKai is your daily clarity dashboard for your mind.
               </p>
             </div>
           </div>

@@ -59,8 +59,6 @@ const HeroHeading = () => (
       Morning Focus
       <span className="mx-2 text-green-500">•</span>
       Evening Debrief
-      <span className="mx-2 text-blue-300">•</span>
-      Gamify
       <span className="mx-2 text-purple-400">•</span>
       Build Clarity
     </motion.p>
